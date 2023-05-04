@@ -60,7 +60,7 @@
     position: relative;
     top: 2px;
   
-    background: url('../images/fondo-letra.gif') 0 0 / cover no-repeat;
+    background: url('/fondo-letra.gif') 0 0 / cover no-repeat;
     color: #de466c;
     -webkit-background-clip: text;
     background-clip: text;
