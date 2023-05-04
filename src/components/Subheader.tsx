@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import portfolio from "@/pages/projects/portfolio"
 import { useRouter } from "next/router"
+import { useContext } from "react"
+import { AppContext } from "@/pages/_app"
 
 const Subheader = ()=> {
     let page = useRouter().pathname.substring(1)
     let project = useRouter()
+
+    let { isScrollUp } = useContext(AppContext)
 
     console.log("RUTA", page)
 
@@ -24,8 +27,8 @@ const Subheader = ()=> {
         project.push('/projects/portfolio')
     }
 
-    return (
-        <div id='sub-header' className="header">
+     return (
+        <div id='sub-header' className={isScrollUp ? "header hidden" : "header"}>
             <div id="s-header-left" className="header-left">
                 <div>CLAUSSIMAR RODRíGUEZ</div>
             </div>

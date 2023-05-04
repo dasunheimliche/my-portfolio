@@ -397,6 +397,12 @@ body {
   display: flex;
 }
 
+/* .hidden {
+  transform: scaleY(1);
+
+  transition: transform 1s;
+} */
+
 
 /* ================================================================================================= */
 
@@ -935,6 +941,12 @@ body {
     padding-bottom: 10px;
   }
 
+  .header {
+    height: 30px;
+
+    transition: height 0.5s;
+  }
+
   #h-header-left {
     /* outline: 1px solid red; */
     position: relative;
@@ -986,5 +998,16 @@ body {
 
   .selectedS {
     /* font-size: 13px; */
+  }
+
+  /* TEST */
+
+  .hidden {
+    /* display: none; */
+    transform: scaleY(0);
+    height: 0px;
+
+    transition: height 0.5s;
+
   }
 }
