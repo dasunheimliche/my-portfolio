@@ -211,7 +211,7 @@ body {
   margin-top: 300px;
 }
 
-@keyframes coso {
+/* @keyframes coso {
   0% {
     opacity: 0;
     background-color: white;
@@ -219,7 +219,7 @@ body {
   100% {
     opacity: 1;
   }
-}
+} */
 
 .main-title { /* ADAPTAR */
   font-size: 37px;
@@ -651,7 +651,7 @@ body {
     margin-top: 250px;
   }
   
-  @keyframes coso {
+  /* @keyframes coso {
     0% {
       opacity: 0;
       background-color: white;
@@ -659,7 +659,7 @@ body {
     100% {
       opacity: 1;
     }
-  }
+  } */
   
   .main-title {
     font-size: 31px;
@@ -823,7 +823,7 @@ body {
     margin-top: 213px;
   }
   
-  @keyframes coso {
+  /* @keyframes coso {
     0% {
       opacity: 0;
       background-color: white;
@@ -831,7 +831,7 @@ body {
     100% {
       opacity: 1;
     }
-  }
+  } */
   
   .main-title {
     font-size: 26px;
