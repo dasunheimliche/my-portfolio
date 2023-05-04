@@ -9,8 +9,8 @@ const Header = ()=> {
     return (
         <div className="header">
             <div id="h-header-left" className="header-left">
-                <div className="header-project-name">{"my-portfolio"}</div>
-                <div className="header-project-version">{"v 1.0"}</div>
+                <div className="header-project-name">{"my-portfolio v 1.0"}</div>
+                {/* <div className="header-project-version">{"v 1.0"}</div> */}
             </div>
             <div className="header-right-container">
                 <div className="separator-background">

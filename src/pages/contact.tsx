@@ -9,7 +9,7 @@ import { AppContext } from './_app'
 
 
 const Contact = ()=> {
-    const isRecruiter = useContext(AppContext)
+    const {isRecruiter} = useContext(AppContext)
 
     console.log("CONTACT CONTEXT", isRecruiter)
 

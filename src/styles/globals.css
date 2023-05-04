@@ -70,6 +70,8 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 #sub-header {
@@ -761,6 +763,7 @@ body {
   .header-right {
     font-size: 9px;
   }
+
   .header-left {
     gap: 4px;
     padding: 11px;
@@ -925,14 +928,22 @@ body {
   }
 
   .header-left {
-    /* outline: 1px solid red; */
     padding-left: 25px;
     width: 30%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #h-header-left {
+    /* outline: 1px solid red; */
+    position: relative;
+    left: 0px;
   }
 
   .header-right {
     /* outline: 1px solid green; */
-    font-size: 10px;
+    font-size: 9px;
   }
 
   #s-header-right {
@@ -942,13 +953,18 @@ body {
 
   .header-right-container {
     /* outline: 1px solid blue; */
-    width: 70%;
+    width: 80%;
+  }
+
+  #sub-header {
+    margin-top: 10px;
   }
 
   #s-header-left {
     font-size: 10px;
     width: 70px;
     margin-left: 25px;
+    margin-left: 12px;
   }
 
   .main-content {
