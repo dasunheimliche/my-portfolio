@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { AppContext } from '../_app'
+
+import useScrollDirection from '@/hooks/isScrollingUp'
 
 import style from '../../styles/projects.module.css'
 import zahir_desk from '../../images/zahir-desktop.jpg'
@@ -8,7 +10,14 @@ import url from '../../icons/url1.png'
 import git from '../../icons/github.png'
 
 const Zahir = ()=> {
-    const isRecruiter = useContext(AppContext)
+    const {isRecruiter, setIsScrollUp } = useContext(AppContext)
+
+    const elementRef = useRef(null);
+    const isScrollingDown = useScrollDirection(elementRef);
+
+    useEffect(()=> {
+        setIsScrollUp(isScrollingDown)
+    }, [isScrollingDown])
 
     return (
         <>
@@ -17,7 +26,7 @@ const Zahir = ()=> {
                 <Link href={"https://zahir-pink.vercel.app/"} target='_blank'><img src={url.src} alt="url" /></Link>
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/el_zahir"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
-            <div className={style.container}>
+            <div ref={elementRef} className={style.container}>
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
                         <div className={style.title}>Concepto</div>

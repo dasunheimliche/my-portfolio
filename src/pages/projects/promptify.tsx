@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { AppContext } from '../_app'
+
+import useScrollDirection from '@/hooks/isScrollingUp'
 
 import style from '../../styles/projects.module.css'
 import promptify_desk from '../../images/promptify_desktop.jpg'
@@ -8,7 +10,14 @@ import url from '../../icons/url1.png'
 import git from '../../icons/github.png'
 
 const Promptify = ()=> {
-    const isRecruiter = useContext(AppContext)
+    const {isRecruiter, setIsScrollUp} = useContext(AppContext)
+
+    const elementRef = useRef(null);
+    const isScrollingDown = useScrollDirection(elementRef);
+
+    useEffect(()=> {
+        setIsScrollUp(isScrollingDown)
+    }, [isScrollingDown])
 
     return (
         <>
@@ -17,7 +26,7 @@ const Promptify = ()=> {
                 <Link href={"https://promptify-steel.vercel.app/login"} target='_blank'><img src={url.src} alt="url" /></Link>
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/promptify/"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
-            <div className={style.container}>
+            <div ref={elementRef} className={style.container}>
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
                         {/* <div className={style.header}>

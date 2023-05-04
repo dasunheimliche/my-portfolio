@@ -11,24 +11,21 @@ import git from '../../icons/github.png'
 import useScrollDirection from '@/hooks/isScrollingUp'
 
 const portfolio = ()=> {
-    const isRecruiter = useContext(AppContext)
+    const {isRecruiter, setIsScrollUp } = useContext(AppContext)
     const elementRef = useRef(null);
     const isScrollingDown = useScrollDirection(elementRef);
-
-    let { setIsScrollUp, isScrollUp } = useContext(AppContext)
 
     useEffect(()=> {
         setIsScrollUp(isScrollingDown)
     }, [isScrollingDown])
 
-    console.log("SCROLL DOWN?", isScrollUp)
 
     return (
         <>
             <div className={style.header}>
                 <div className={`${style.promptify} ${style.logo}`}>Portfolio</div>
                 {/* <img src={url.src} alt="url" /> */}
-                {isRecruiter && <img src={git.src} alt="github" />}
+                {isRecruiter && <Link href={"https://github.com/dasunheimliche/my-portfolio"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
             <div ref={elementRef} className={style.container}>
                 <div className={style.project}>

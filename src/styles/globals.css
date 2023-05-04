@@ -944,7 +944,7 @@ body {
   .header {
     height: 30px;
 
-    transition: height 0.5s;
+    transition: height 0.2s;
   }
 
   #h-header-left {
@@ -1007,7 +1007,7 @@ body {
     transform: scaleY(0);
     height: 0px;
 
-    transition: height 0.5s;
+    transition: height 0.2s;
 
   }
 }
