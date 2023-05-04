@@ -125,7 +125,7 @@
     /* color: rgb(228, 228, 228); */
     display: inline;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
 
     background: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
     background: linear-gradient(-90deg,#74fec5 0,#35c3ff 30%,#f97d6f 50%,#76d880 70%,#ebf38b 90%,#6afec0 100%);
@@ -330,7 +330,7 @@
         top: 1px;
     }
     
-    .logo {
+    .header {
         margin-left: 67px;
         margin-top: 42px;
         margin-bottom: 12px;
@@ -411,7 +411,7 @@
         top: 1px;
     }
     
-    .logo {
+    .header {
         margin-left: 57px;
         margin-top: 36px;
         margin-bottom: 11px;
@@ -495,7 +495,7 @@
         padding-bottom: 21px;
     }
 
-    .logo {
+    .header {
         margin-left: 30px;
     }
 

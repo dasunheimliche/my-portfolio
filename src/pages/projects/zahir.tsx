@@ -1,22 +1,25 @@
+import Link from 'next/link'
+import { useContext } from 'react'
+import { AppContext } from '../_app'
+
 import style from '../../styles/projects.module.css'
 import zahir_desk from '../../images/zahir-desktop.jpg'
 import url from '../../icons/url1.png'
 import git from '../../icons/github.png'
 
 const Zahir = ()=> {
-
+    const isRecruiter = useContext(AppContext)
 
     return (
         <>
             <div className={style.header}>
                 <div className={`${style.zahir} ${style.logo}`}>Zahir.</div>
-                <img src={url.src} alt="url" />
-                <img src={git.src} alt="github" />
+                <Link href={"https://zahir-pink.vercel.app/"} target='_blank'><img src={url.src} alt="url" /></Link>
+                {isRecruiter && <Link href={"https://github.com/dasunheimliche/el_zahir"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
             <div className={style.container}>
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
-                        {/* <div className={style.zahir}>Zahir.</div> */}
                         <div className={style.title}>Concepto</div>
                         <div className={style.content}>
                         Zahir es una red social única que se propone convertirse en un santuario para aquellos que buscan un espacio para guardar y acceder a su contenido multimedia favorito sin ser influenciados por las modas o las tendencias. Esta plataforma permite a los usuarios guardar y proteger sus canciones, imágenes y videos favoritos, y acceder a ellos en cualquier momento sin distracciones innecesarias. 

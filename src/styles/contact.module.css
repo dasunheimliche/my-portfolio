@@ -60,6 +60,10 @@
     align-items: center;
 }
 
+.listMobile {
+    display: none;
+}
+
 #first {
     animation: fadeIn 0.5s ease-in-out;
     display: flex;
@@ -112,3 +116,165 @@
     opacity: 0.7;
 }
 
+
+
+/* ================================================= */
+
+
+/* .container {
+    height: calc(100% - 145px);
+}
+
+
+.container ul {
+    font-size: 53px;
+    margin-bottom: 80px;
+    margin-right: 100px;
+}
+
+.container li {
+    letter-spacing: 3px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 101px #ffffff;
+}
+
+#first img {
+    height: 43px;
+    margin-left: 15px;
+}
+
+#second img {
+    height: 43px;
+    margin-left: 15px;
+}
+
+#third img {
+    height: 43px;
+    margin-left: 15px;
+}
+
+#fourth img {
+    height: 43px;
+    margin-left: 15px;
+} */
+
+@media (max-width: 1600px) {
+    .container {
+        height: calc(100% - 121px);
+    }
+    
+    
+    .container ul {
+        font-size: 44px;
+        margin-bottom: 67px;
+        margin-right: 83px;
+    }
+    
+    .container li {
+        letter-spacing: 2px;
+        text-shadow:
+        0 0 6px #fff,
+        0 0 84px #ffffff;
+    }
+    
+    #first img {
+        height: 36px;
+        margin-left: 12px;
+    }
+    
+    #second img {
+        height: 36px;
+        margin-left: 12px;
+    }
+    
+    #third img {
+        height: 36px;
+        margin-left: 12px;
+    }
+    
+    #fourth img {
+        height: 36px;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container {
+        height: calc(100% - 103px);
+    }
+    
+    .container ul {
+        font-size: 38px;
+        margin-bottom: 57px;
+        margin-right: 71px;
+    }
+    
+    .container li {
+        letter-spacing: 2px;
+        text-shadow:
+        0 0 5px #fff,
+        0 0 72px #ffffff;
+    }
+    
+    #first img {
+        height: 31px;
+        margin-left: 11px;
+    }
+    
+    #second img {
+        height: 31px;
+        margin-left: 11px;
+    }
+    
+    #third img {
+        height: 31px;
+        margin-left: 11px;
+    }
+    
+    #fourth img {
+        height: 31px;
+        margin-left: 11px;
+    }
+}
+
+@media (max-width: 912px) and (orientation: portrait) {
+
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .container {
+        height: calc(100% - 103px);
+
+    }
+
+    .container ul {
+        font-size: 20px;
+        margin-bottom: 25px;
+        margin-right: 20px;
+        gap: 10px;
+    }
+
+
+    #first img {
+        height: 21px;
+        margin-right: 7px;
+    }
+    
+    #second img {
+        height: 21px;
+        margin-right: 7px;
+    }
+    
+    #third img {
+        height: 21px;
+        margin-right: 7px;
+    }
+    
+    #fourth img {
+        height: 21px;
+        margin-right: 7px;
+    }
+
+
+}

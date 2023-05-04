@@ -1,17 +1,21 @@
+import Link from 'next/link'
+import { useContext } from 'react'
+import { AppContext } from '../_app'
+
 import style from '../../styles/projects.module.css'
 import words_battle_desk from '../../images/words_battle_desktop.jpg'
 import url from '../../icons/url1.png'
 import git from '../../icons/github.png'
 
 const WordsBattle = ()=> {
-
+    const isRecruiter = useContext(AppContext)
 
     return (
         <>
             <div className={style.header}>
                 <div className={`${style['words-battle']} ${style.logo}`}>Words Battle</div>
-                <img src={url.src} alt="url" />
-                <img src={git.src} alt="github" />
+                <Link href={"https://words-battle.vercel.app/"} target='_blank'><img src={url.src} alt="url" /></Link>
+                {isRecruiter && <Link href={"https://github.com/dasunheimliche/words-battle"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
             <div className={style.container}>
                 <div className={style.project}>

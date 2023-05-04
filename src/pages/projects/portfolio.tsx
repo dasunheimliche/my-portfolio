@@ -1,18 +1,23 @@
+import Link from 'next/link'
+import { useContext } from 'react'
+import { AppContext } from '../_app'
+
 import style from '../../styles/projects.module.css'
 import portfolio_desk from '../../images/portfolio_desk.jpg'
 import portfolio_inspi from '../../images/portfolio_inspi.png'
 import url from '../../icons/url1.png'
 import git from '../../icons/github.png'
 
-const portfolio = ()=> {
 
+const portfolio = ()=> {
+    const isRecruiter = useContext(AppContext)
 
     return (
         <>
             <div className={style.header}>
                 <div className={`${style.promptify} ${style.logo}`}>Portfolio</div>
-                <img src={url.src} alt="url" />
-                <img src={git.src} alt="github" />
+                {/* <img src={url.src} alt="url" /> */}
+                {isRecruiter && <img src={git.src} alt="github" />}
             </div>
             <div className={style.container}>
                 <div className={style.project}>
