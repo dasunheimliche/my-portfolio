@@ -22,7 +22,7 @@ const WordsBattle = ()=> {
     return (
         <>
             <div className={style.header}>
-                <div className={`${style['words-battle']} ${style.logo}`}>Words Battle</div>
+                <div className={`${style.promptify} ${style.logo}`}>Words Battle</div>
                 <Link href={"https://words-battle.vercel.app/"} target='_blank'><img src={url.src} alt="url" /></Link>
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/words-battle"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>

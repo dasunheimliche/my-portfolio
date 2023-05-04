@@ -942,7 +942,7 @@ body {
   }
 
   .header {
-    height: 30px;
+    height: 8vw;
 
     transition: height 0.2s;
   }
@@ -969,14 +969,15 @@ body {
   }
 
   #sub-header {
-    margin-top: 10px;
+    margin-top: 25px;
+    /* padding-top: 25px; */
   }
 
   #s-header-left {
     font-size: 10px;
     width: 70px;
     margin-left: 25px;
-    margin-left: 12px;
+    margin-left: 14px;
   }
 
   .main-content {

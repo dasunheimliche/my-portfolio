@@ -128,14 +128,19 @@
     font-weight: bolder;
 
     background: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
-    background: linear-gradient(-90deg,#74fec5 0,#35c3ff 30%,#f97d6f 50%,#76d880 70%,#ebf38b 90%,#6afec0 100%);
-    /* background: linear-gradient(-90deg, #341e66 0%, rgb(46, 72, 131) 37%, rgb(173, 66, 178) 69%, #f55d85 100%); */
+    background: linear-gradient(-60deg,#74fec5 0,#35c3ff 30%,#f97d6f 50%,#76d880 70%,#ebf38b 90%,#6afec0 100%);
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-image: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+
 
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 2rem #000);
+    /* filter: drop-shadow(0 0 2rem #000); */
+
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .subtitle {
@@ -429,7 +434,7 @@
     
     
     .title {
-        font-size: 17px;
+        font-size: 16px;
     }
     
     .subtitle {
@@ -490,21 +495,31 @@
 
 @media (max-width: 500px) and (orientation: portrait) {
     .container {
-        width: calc(100% - 24px);
+        width: calc(100% - 28px);
         margin-left: 22px;
         margin-right: 22px;
         padding-bottom: 21px;
 
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 14px;
+        margin-right: 14px;
+
     }
 
     .header {
-        margin-left: 15px;
+        margin-left: 17px;
         margin-top: 15px
+    }
+
+    .header img { /* ADAPT */
+        width: auto;
+        height: 16px;
+        margin-left: 15px;
+        cursor: pointer;
     }
 
     .project {
         column-count: 1;
     }
+
+
 }
