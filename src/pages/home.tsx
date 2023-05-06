@@ -23,11 +23,11 @@ const HomePage = ()=> {
         <div className="main-home">
             {loading && <div className='loading'></div>}
             <div style={{width: '100%', height: '100%', position: 'absolute', zIndex: "-1"}} className='main-back land-back'>
-                <Image fill={true}  src={landscape_back.src} alt="background image" onLoadingComplete={imgIsLoaded} />
+                <Image fill={true} style={{objectFit:"cover"}} src={landscape_back.src} alt="background image" onLoadingComplete={imgIsLoaded} />
             </div>
             {loading && <div className='loading'></div>}
             <div style={{width: '100%', height: '100%', position: 'absolute', zIndex: "-1"}} className='main-back port-back'>
-                <Image fill={true}  src={portrait_back.src} alt="background image" onLoadingComplete={imgIsLoaded} />
+                <Image style={{objectFit:"cover"}} fill={true}  src={portrait_back.src} alt="background image" onLoadingComplete={imgIsLoaded} />
             </div>
             <div className="main-content">
                 <h1 className="main-title neonText fade2">WELCOME TO MY PORTFOLIO</h1>

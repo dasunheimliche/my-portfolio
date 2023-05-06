@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useContext, useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import { AppContext } from '../_app'
 
 
@@ -11,9 +11,13 @@ import git from '../../icons/github.png'
 import useScrollDirection from '@/hooks/isScrollingUp'
 
 const portfolio = ()=> {
-    const {isRecruiter, setIsScrollUp } = useContext(AppContext)
+    const {isRecruiter, setIsScrollUp, setLoading } = useContext(AppContext)
     const elementRef = useRef(null);
     const isScrollingDown = useScrollDirection(elementRef);
+
+    useEffect(()=>{
+        setLoading(false)
+    }, [])
 
     useEffect(()=> {
         setIsScrollUp(isScrollingDown)
@@ -27,7 +31,7 @@ const portfolio = ()=> {
                 {/* <img src={url.src} alt="url" /> */}
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/my-portfolio"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
-            <div ref={elementRef} className={style.container}>
+            <div ref={elementRef} className={style.container} >
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`} >
                         <div className={style.title}>Concepto</div>

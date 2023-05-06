@@ -36,15 +36,20 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }
 
-  
-
   let [ isRecruiter, setIsRecruiter ] = useState<boolean>(isRec? isRec : false)
   let [ isScrollUp, setIsScrollUp ] = useState<boolean>(false)
   let [ loading, setLoading ] = useState<boolean>(true)
 
+  //=================================
+
+
+
+  //=================================
+
   let path = useRouter().pathname.substring(1)
   let router = useRouter()
   const { userType } = queryString.parse(router.asPath.split(/\?/)[1])
+  
 
   useEffect(()=> {
     if (userType === "recruiter") {

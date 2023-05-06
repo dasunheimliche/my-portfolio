@@ -10,10 +10,14 @@ import url from '../../icons/url1.png'
 import git from '../../icons/github.png'
 
 const WordsBattle = ()=> {
-    const {isRecruiter, setIsScrollUp} = useContext(AppContext)
+    const {isRecruiter, setIsScrollUp, setLoading} = useContext(AppContext)
 
     const elementRef = useRef(null);
     const isScrollingDown = useScrollDirection(elementRef);
+
+    useEffect(()=>{
+        setLoading(false)
+    }, [])
 
     useEffect(()=> {
         setIsScrollUp(isScrollingDown)
