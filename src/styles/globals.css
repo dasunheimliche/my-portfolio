@@ -5,6 +5,42 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes fadeIn { /* ADAPTAR */
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fade1 {
+  animation: fadeIn 0.5s ease-in-out; 
+}
+.fade2 {
+  animation: fadeIn 0.7s ease-in-out;
+}
+.fade3 {
+  animation: fadeIn 0.9s ease-in-out;
+}
+.fade4 {
+  animation: fadeIn 1.1s ease-in-out;
+}
+.fade5 {
+  animation: fadeIn 1.3s ease-in-out;
+}
+.fade6 {
+  animation: fadeIn 1.5s ease-in-out;
+}
+.fade7 {
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+
 html,
 body {
   margin: 0;
@@ -44,7 +80,7 @@ body {
 }
 
 .main-home {
-  z-index: -1;
+  z-index: -1; 
   background-image: url('/background-h.png');
   background-size: cover;
   width: 100%;
@@ -226,7 +262,7 @@ body {
   width: 22%;
   color: deepskyblue;
   margin-bottom: 5px;
-  animation: flicker 1.5s infinite alternate;
+  /* animation: flicker 1.5s infinite alternate; */
 
   text-shadow:
     0 0 7px deepskyblue,
@@ -327,6 +363,7 @@ body {
   justify-content: center;
   height: 100%;
   overflow: hidden;
+
 }
 .overlay {
   display: block;
@@ -346,6 +383,7 @@ body {
   animation: glitch 10s linear infinite;
   transform: translatex(0.1rem);
 }
+
 @keyframes glitch {
   to {
     clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);
@@ -358,6 +396,8 @@ body {
   border-radius: 20vh;
   position: relative;
   overflow: hidden;
+
+  /* opacity: 0; */
 }
 .sun:before {
   content: "";
@@ -369,6 +409,8 @@ body {
   background: linear-gradient(0deg, #2b1165 0%, rgba(26, 58, 130, 1) 37%, rgba(171, 36, 177, 1) 69%, #f54171 100%);
   background-size: 40vh 40vh;
   width: 100%;
+
+  /* opacity: 0; */
 }
 .sun:after {
   content: "";
@@ -383,6 +425,8 @@ body {
   background-position: bottom center;
   clip-path: polygon(0 -10em, 100% -10em, 100% -10.5em, 0 -10.5em, 0 -9em, 100% -9em, 100% -9.5em, 0 -9.5em, 0 -8em, 100% -8em, 100% -8.5em, 0 -8.5em, 0 -7em, 100% -7em, 100% -7.5em, 0 -7.5em, 0 -6em, 100% -6em, 100% -6.5em, 0 -6.5em, 0 -5em, 100% -5em, 100% -5.5em, 0 -5.5em, 0 -4em, 100% -4em, 100% -4.5em, 0 -4.5em, 0 -3em, 100% -3em, 100% -3.5em, 0 -3.5em, 0 -2em, 100% -2em, 100% -2.5em, 0 -2.5em, 0 -1em, 100% -1em, 100% -1.5em, 0 -1.5em, 0 0, 100% 0, 100% -0.5em, 0 -0.5em, 0 0, 100% 0, 100% 0.5em, 0 0.5em, 0 1em, 100% 1em, 100% 1.5em, 0 1.5em, 0 2em, 100% 2em, 100% 2.5em, 0 2.5em, 0 3em, 100% 3em, 100% 3.5em, 0 3.5em, 0 4em, 100% 4em, 100% 4.5em, 0 4.5em, 0 5em, 100% 5em, 100% 5.5em, 0 5.5em, 0 6em, 100% 6em, 100% 6.5em, 0 6.5em, 0 7em, 100% 7em, 100% 7.5em, 0 7.5em, 0 8em, 100% 8em, 100% 8.5em, 0 8.5em, 0 9em, 100% 9em, 100% 9.5em, 0 9.5em);
   animation: lightEffect 20s linear infinite reverse;
+
+  /* opacity: 0; */
 }
 @keyframes lightEffect {
   to {
@@ -994,7 +1038,7 @@ body {
   }
 
   .selectedM {
-    filter: drop-shadow(0 0 10px #ffffff16);
+    filter: drop-shadow(0 0 10px #ffffff00);
   }
 
   .selectedS {
@@ -1009,6 +1053,7 @@ body {
     height: 0px;
 
     transition: height 0.2s;
+    margin-top: 10px;
 
   }
 }

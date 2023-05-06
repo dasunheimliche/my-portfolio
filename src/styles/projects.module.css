@@ -196,7 +196,6 @@
 }
 
 .post {
-    /* outline: 1px solid red; */
     margin: 0;
     grid-template-rows: 1fr auto;
     margin-bottom: 12px;
@@ -204,7 +203,9 @@
     overflow: hidden;
     border-radius: 15px;
 
-    /* animation: fadeIn 0.5s ease-in-out; */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter:blur(2px)
+
 }
 
 .col {

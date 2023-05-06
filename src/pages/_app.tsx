@@ -51,6 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <AppContext.Provider value={{isRecruiter, isScrollUp, setIsScrollUp}}>
       <div className='main'>
+        <img src="" alt="" />
         <Header />
         <Subheader />
         <Component {...pageProps}/>
