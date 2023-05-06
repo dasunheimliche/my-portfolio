@@ -4,12 +4,16 @@ import git from '../icons/github.png'
 import whatsapp from '../icons/whatsapp.png'
 import linkedin from '../icons/linkedin.png'
 
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { AppContext } from './_app'
 
 
 const Contact = ()=> {
-    const {isRecruiter} = useContext(AppContext)
+    const {isRecruiter, setLoading} = useContext(AppContext)
+
+    useEffect(()=>{
+        setLoading(false)
+    }, [])
 
     console.log("CONTACT CONTEXT", isRecruiter)
 

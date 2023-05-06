@@ -1,6 +1,16 @@
+import { useContext, useEffect } from 'react'
+import { AppContext } from './_app'
+
 import style from '../styles/skills.module.css'
 
 const Skills = ()=> {
+    const {setLoading} = useContext(AppContext)
+
+    useEffect(()=>{
+        setLoading(false)
+    }, [])
+
+
     return (
         <>
             <div className={style.container}>
