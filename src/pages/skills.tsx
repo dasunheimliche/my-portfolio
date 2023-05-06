@@ -4,7 +4,7 @@ const Skills = ()=> {
     return (
         <>
             <div className={style.container}>
-                <div className={`${style.topic} ${style.fade1}`}>
+                <div className={`${style.topic} ${style.fade2}`}>
                     <div className={style.title}>Frontend</div>
                     <div className={style.list}>
                         <ul>
@@ -13,7 +13,7 @@ const Skills = ()=> {
                         </ul>
                     </div>
                 </div>
-                <div className={`${style.topic} ${style.fade2}`}>
+                <div className={`${style.topic} ${style.fade3}`}>
                     <div className={style.title}>Backend</div>
                     <div className={style.list}>
                         <ul>
@@ -24,7 +24,7 @@ const Skills = ()=> {
                         </ul>
                     </div>
                 </div>
-                <div className={`${style.topic} ${style.fade3}`}>
+                <div className={`${style.topic} ${style.fade4}`}>
                     <div className={style.title}>Lenguajes</div>
                     <div className={style.list}>
                         <ul>
@@ -35,7 +35,7 @@ const Skills = ()=> {
                         </ul>
                     </div>
                 </div>
-                <div className={`${style.topic} ${style.fade4}`}>
+                <div className={`${style.topic} ${style.fade5}`}>
                     <div className={style.title}>Soft Skills</div>
                     <div className={style.list}>
                         <ul>
