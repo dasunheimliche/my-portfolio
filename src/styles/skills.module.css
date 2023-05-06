@@ -64,8 +64,8 @@
     padding: 15px;
     border-radius: 15px;
     margin-top: 110px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter:blur(10px)
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px) */
 }
 
 .title {
