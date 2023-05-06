@@ -13,6 +13,8 @@ import React from 'react'
 interface AppContext {
   isRecruiter: boolean
   isScrollUp: boolean
+  loading: boolean
+  setLoading: Dispatch<boolean>
   setIsScrollUp: Dispatch<boolean>
 }
 
@@ -20,7 +22,9 @@ export const AppContext = createContext<AppContext>(
   {
     isRecruiter: false, 
     isScrollUp: false, 
-    setIsScrollUp: () => {}
+    loading: true,
+    setLoading: ()=>{},
+    setIsScrollUp: ()=>{}
   })
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -34,8 +38,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   
 
-  let [ isRecruiter, setIsRecruiter ] = useState(isRec? isRec : false)
-  let [ isScrollUp, setIsScrollUp ] = useState(false)
+  let [ isRecruiter, setIsRecruiter ] = useState<boolean>(isRec? isRec : false)
+  let [ isScrollUp, setIsScrollUp ] = useState<boolean>(false)
+  let [ loading, setLoading ] = useState<boolean>(true)
 
   let path = useRouter().pathname.substring(1)
   let router = useRouter()
@@ -49,11 +54,11 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [userType])
 
   return (
-    <AppContext.Provider value={{isRecruiter, isScrollUp, setIsScrollUp}}>
+    <AppContext.Provider value={{isRecruiter, isScrollUp, setIsScrollUp, loading, setLoading}}>
       <div className='main'>
         <img src="" alt="" />
-        <Header />
-        <Subheader />
+        <div style={loading? {opacity: "0"} : {opacity: "1"}}><Header/></div>
+        <div style={loading? {opacity: "0"} : {opacity: "1"}}><Subheader /></div>
         <Component {...pageProps}/>
         {path !== "home" && <div className='main-others'>
             <div className="sun"></div>

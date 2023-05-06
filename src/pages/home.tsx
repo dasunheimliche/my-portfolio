@@ -3,12 +3,17 @@ import { useState } from 'react'
 import landscape_back from '../../public/background-h.png'
 import portrait_back from '../../public/background-v.png'
 
+import { useContext } from 'react'
+import { AppContext } from './_app'
+
 const HomePage = ()=> {
 
-    let [ loading, setLoadig ] = useState<boolean>(true)
+    const {loading, setLoading} = useContext(AppContext)
+
+    // let [ loading, setLoadig ] = useState<boolean>(true)
 
     const imgIsLoaded = ()=> {
-        setLoadig(false)
+        setLoading(false)
     }
 
     console.log("LOADING?", loading)
