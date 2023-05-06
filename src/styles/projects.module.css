@@ -522,5 +522,12 @@
         column-count: 1;
     }
 
+    .text {
+        padding: 20px;
+    }
+
+    .list li {
+        padding-bottom: 3px;
+    }
 
 }

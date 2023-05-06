@@ -203,12 +203,12 @@
 
 @media (max-width: 500px) and (orientation: portrait) {
     .container {
-        margin-left: 22px;
-        margin-right: 22px;
+        margin-left: 14px;
+        margin-right: 14px;
         margin-top: 20px;
         padding-bottom: 20px;
         flex-direction: column;
-        width: calc(100% - 44px);
+        width: calc(100% - 28px);
         height: calc(100% - 105px);
         justify-content: flex-start;
 

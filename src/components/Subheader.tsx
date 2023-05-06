@@ -28,7 +28,7 @@ const Subheader = ()=> {
     }
 
      return (
-        <div id={isScrollUp? 'sub-header hidden' : 'sub-header' } className={isScrollUp ? "header hidden" : "header"}>
+        <div id={isScrollUp? 'sub-header hidden' : 'sub-header'} className={isScrollUp? "header hidden" : "header"}>
             <div id="s-header-left" className="header-left">
                 <div>CLAUSSIMAR RODRíGUEZ</div>
             </div>
