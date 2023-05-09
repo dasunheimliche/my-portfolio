@@ -13,10 +13,11 @@
 
 
 .container {
-    /* outline: 5px solid red; */
-    outline-offset: -5px;
+    /* outline: 5px solid red;
+    outline-offset: -5px; */
     width: calc(100%);
     height: calc(100% - 145px);
+
     /* margin-left: 75px;
     margin-right: 75px; */
 
@@ -244,7 +245,10 @@
 
 @media (max-width: 500px) and (orientation: portrait) {
     .container {
-        height: calc(100% - 103px);
+        /* height: calc(100% - 103px); */
+        height: auto;
+        position: relative;
+        top: 60dvh;
 
     }
 
