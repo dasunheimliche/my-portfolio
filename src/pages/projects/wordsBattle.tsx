@@ -77,8 +77,8 @@ const WordsBattle = ()=> {
                         <div className={style.title}>Upcoming Implementations</div>
                         <div className={style.content}>
                             <ul className={style.list}>
-                                <li>Social network: allow users to share their prompts or add prompts created by other users, as well as follow them</li>
-                                <li>Specific options optimized for each AI</li>
+                                <li>Create User Accounts: You can create an account and keep track of battle history with your friends</li>
+                                <li>English Language Version: You can play the game by forming words in English</li>
                             </ul>
                         </div>
                     </div>
