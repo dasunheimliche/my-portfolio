@@ -33,7 +33,7 @@ const Zahir = ()=> {
             <div ref={elementRef} className={style.container}>
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
-                        <div className={style.title}>Concepto</div>
+                        <div className={style.title}>Concept</div>
                         <div className={style.content}>
                             Zahir is a unique social network that aims to become a sanctuary for those seeking a space to store and access their favorite multimedia content without being influenced by fads or trends. This platform allows users to save and protect their favorite songs, images, and videos, and access them at any time without unnecessary distractions.
                         </div>
