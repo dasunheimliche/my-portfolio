@@ -31,7 +31,7 @@ const HomePage = ()=> {
             </div>
             <div className="main-content">
                 <h1 className="main-title neonText fade2">WELCOME TO MY PORTFOLIO</h1>
-                <div className="main-subtitle fade3">Hi! My name is Claussimar Rodríguez and I am a fullstack web developer with a focus on frontend. I hope you can see in my projects and your visit through my portfolio my attention to details and to achieving an aesthetically pleasing and simple user experience.</div>
+                <div className="main-subtitle fade3">Hi! My name is Claussimar Rodríguez and I am a fullstack web developer with a focus on frontend. I hope you can see in my projects and your visit through my portfolio my attention to details and achieving an aesthetically pleasing and simple user experience.</div>
                 <button className='main-button fade4'>DOWNLOAD MY CV</button>
             </div>
         </div>
