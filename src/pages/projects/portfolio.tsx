@@ -31,20 +31,21 @@ const portfolio = ()=> {
                 {/* <img src={url.src} alt="url" /> */}
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/my-portfolio"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
-            <div ref={elementRef} className={style.container} >
+            
+            <div ref={elementRef} className={style.container}>
                 <div className={style.project}>
-                    <div className={`${style.text} ${style.post} ${style.fade1}`} >
-                        <div className={style.title}>Concepto</div>
+                    <div className={`${style.text} ${style.post} ${style.fade1}`}>
+                        <div className={style.title}>Concept</div>
                         <div className={style.content}>
-                        Este portfolio es un proyecto inspirado en la estética synthwave , el cual es un estilo basado en la música electrónica y los videojuegos de los años 80 y prncipios de los 90. Se caracteriza principalmente por su estilo retro futurista, con colores brillantes y neón.  
+                            This portfolio is a project inspired by the synthwave aesthetic, which is a style based on electronic music and video games from the 80s and early 90s. It is mainly characterized by its retro-futuristic style, with bright and neon colors.  
                         </div>
                     </div>
-                    <img src={portfolio_desk.src} className={`${style.post} ${style.fade2}` } alt="" />
-                    <div className={`${style.text} ${style.post} ${style.fade3}`} >
-                        <div className={style.title}>Tecnologías utilizadas</div>
+                    <img src={portfolio_desk.src} className={`${style.post} ${style.fade2}`} alt="" />
+                    <div className={`${style.text} ${style.post} ${style.fade3}`}>
+                        <div className={style.title}>Technologies used</div>
                         <div className={`${style.content} ${style.flexed}`}>
                             <div>
-                                <div className={style.subtitle}>Lenguaje</div>
+                                <div className={style.subtitle}>Language</div>
                                 <ul className={style.list}>
                                     <li>Typescript</li>
                                 </ul>
@@ -58,10 +59,10 @@ const portfolio = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className={`${style.text} ${style.post} ${style.fade4}`} >
-                        <div className={style.title}>Inspiración</div>
+                    <div className={`${style.text} ${style.post} ${style.fade4}`}>
+                        <div className={style.title}>Inspiration</div>
                         <div className={style.content}>
-                            <p>Este es mi primer proyecto basado en un resultado de Midjourney. Mi intención no fue necesariamente reproducir el resultado tal cual, sino usarlo de puntapié y punto de partida para conseguir algo que bien podría ser parecido, o bien, totalmente diferente.</p><br></br>
+                            <p>This is my first project based on a Midjourney result. My intention was not necessarily to reproduce the result exactly, but to use it as a starting point to achieve something that could be similar or completely different.</p><br></br>
                             <img src={portfolio_inspi.src} alt="portfolio inspiration" />
                         </div>
                     </div>

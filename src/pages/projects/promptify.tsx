@@ -31,22 +31,19 @@ const Promptify = ()=> {
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/promptify/"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
             <div ref={elementRef} className={style.container}>
-                <div className={style.project}>
+            <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
-                        {/* <div className={style.header}>
-                            <div className={style.promptify}>Promptify.</div>
-                        </div> */}
-                        <div className={style.title}>Concepto</div>
+                        <div className={style.title}>Concept</div>
                         <div className={style.content}>
-                        Promptify es una plataforma en línea diseñada para ayudar a los usuarios a crear y organizar prompts para proyectos de inteligencia artificial. La herramienta permite a los usuarios crear tarjetas de prompts personalizados que pueden ser utilizados en una variedad de proyectos de IA. Los usuarios pueden crear tanto prompts simples como secuencias de comandos complejas, y luego guardarlos en tarjetas para acceder a ellos rápidamente. Promptify es una solución efectiva para aquellos que buscan mejorar la eficiencia de sus proyectos de IA, ya que la organización de prompts puede ahorrar tiempo y aumentar la productividad. 
+                        Promptify is an online platform designed to help users create and organize prompts for artificial intelligence projects. The tool allows users to create custom prompt cards that can be used in a variety of AI projects. Users can create both simple prompts and complex script sequences, and then save them on cards for quick access. Promptify is an effective solution for those looking to improve the efficiency of their AI projects, as prompt organization can save time and increase productivity. 
                         </div>
                     </div>
                     <img src={promptify_desk.src} className={`${style.post} ${style.fade2}`} alt="" />
                     <div className={`${style.text} ${style.post} ${style.fade3}`}>
-                        <div className={style.title}>Tecnologías utilizadas</div>
+                        <div className={style.title}>Technologies used</div>
                         <div className={`${style.content} ${style.flexed}`}>
                             <div>
-                                <div className={style.subtitle}>Lenguaje</div>
+                                <div className={style.subtitle}>Language</div>
                                 <ul className={style.list}>
                                     <li>Typescript</li>
                                 </ul>
@@ -70,20 +67,20 @@ const Promptify = ()=> {
                         </div>
                     </div>
                     <div className={`${style.text} ${style.post} ${style.fade4}`}>
-                        <div className={style.title}>Funcionalidad</div>
+                        <div className={style.title}>Functionality</div>
                         <div className={style.content}>
-                        <p>Promptify permite al usuario crear tarjetas que pueden consistir tanto en un único prompt, como en una cadena de prompts para instrucciones mas complejas. Estos prompts se organizan por IA, y topics específicos, y pueden editarse una vez creados pudiendo incluso agregar nuevos prompts a tarjetas que originalmente consistían en una solo. </p><br></br>
-                        <p>Al hacer click en una tarjeta se abre un panel que permite editar cada prompt para adaptarla a cada situacion, y copiar la instruccion fácilmente para usarla diréctamente en la interfaz de la IA que suele ser poco cómoda para escribir instrucciones largas. </p><br></br>
-                        <p>Si la tarjeta contiene una cadena de prompts, al copiar una instruccion al portapapeles, el panel avanza automáticamente a la siguiente instruccion en la cadena.</p><br></br>
-                        <p>Tanto las IA, como los topics y tarjetas pueden marcarse como favoritos para un más fácil acceso a ellas.</p>
+                        <p>Promptify allows users to create cards that can consist of either a single prompt or a chain of prompts for more complex instructions. These prompts are organized by AI and specific topics and can be edited once created, including the ability to add new prompts to cards that originally consisted of only one. </p><br></br>
+                        <p>Clicking on a card opens a panel that allows each prompt to be edited to fit each situation, and easily copy the instruction to use it directly in the often uncomfortable interface of the AI. </p><br></br>
+                        <p>If the card contains a chain of prompts, copying an instruction to the clipboard automatically advances the panel to the next instruction in the chain.</p><br></br>
+                        <p>Both AIs, topics, and cards can be marked as favorites for easier access.</p>
                         </div>
                     </div>
                     <div className={`${style.text} ${style.post} ${style.fade5}`}>
-                        <div className={style.title}>Próximas implementaciones</div>
+                        <div className={style.title}>Upcoming Implementations</div>
                         <div className={style.content}>
                             <ul className={style.list}>
-                                <li>Red social: permitir a los usuarios compartir sus prompts o agregar prompts creados por otros usuarios, así como seguirlos</li>
-                                <li>Opciones específicas optimizadas para cada IA</li>
+                                <li>Social network: allow users to share their prompts or add prompts created by other users, as well as follow them</li>
+                                <li>Specific options optimized for each AI</li>
                             </ul>
                         </div>
                     </div>

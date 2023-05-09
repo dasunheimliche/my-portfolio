@@ -35,12 +35,12 @@ const Zahir = ()=> {
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
                         <div className={style.title}>Concepto</div>
                         <div className={style.content}>
-                        Zahir es una red social única que se propone convertirse en un santuario para aquellos que buscan un espacio para guardar y acceder a su contenido multimedia favorito sin ser influenciados por las modas o las tendencias. Esta plataforma permite a los usuarios guardar y proteger sus canciones, imágenes y videos favoritos, y acceder a ellos en cualquier momento sin distracciones innecesarias. 
+                            Zahir is a unique social network that aims to become a sanctuary for those seeking a space to store and access their favorite multimedia content without being influenced by fads or trends. This platform allows users to save and protect their favorite songs, images, and videos, and access them at any time without unnecessary distractions.
                         </div>
                     </div>
                     <img src={zahir_desk.src} className={`${style.post} ${style.fade2}`} alt="" />
                     <div className={`${style.text} ${style.post} ${style.fade3}`}>
-                        <div className={style.title}>Tecnologías utilizadas</div>
+                        <div className={style.title}>Used technologies</div>
                         <div className={`${style.content} ${style.flexed}`}>
                             <div>
                                 <div className={style.subtitle}>Lenguaje</div>
@@ -69,19 +69,19 @@ const Zahir = ()=> {
                         </div>
                     </div>
                     <div className={`${style.text} ${style.post} ${style.fade4}`}>
-                        <div className={style.title}>Funcionalidad</div>
+                        <div className={style.title}>Functionality</div>
                         <div className={style.content}>
-                            <p>Zahir. tiene todas las funcionalidades básicas de una red social multimedia. Permite registrarse, hacer login, postear texto, imagenes, videos (tanto por url como por archivo), comentarios, likes, así como seguir a otros usuarios y ser seguido, entre otras cosas.</p><br></br>
-                            <p>Las imagenes provenientes de una url, son almacenadas en un host privado, por lo que la caducación del link no es un problema. La imagen siempre estará disponible.</p>
+                            <p>Zahir has all the basic functionalities of a multimedia social network. It allows users to register, login, post text, images, videos (both by URL and file), comments, likes, as well as follow other users and be followed, among other things.</p><br></br>
+                            <p>Images from a URL are stored on a private host, so link expiration is not a problem. The image will always be available.</p>
                         </div>
                     </div>
                     <div className={`${style.text} ${style.post} ${style.fade5}`}>
-                        <div className={style.title}>Próximas implementaciones</div>
+                        <div className={style.title}>Upcoming features</div>
                         <div className={style.content}>
                             <ul className={style.list}>
-                                <li>Moods: un sistema que permita agrupar posts en colecciones relacionadas con estados de ánimo o estéticas diferentes</li>
-                                <li>Notificaciones en vivo</li>
-                                <li>Playlist: permitir que que los videos de una coleccion de moods se reproduzcan en una ventana emergente. Especialmente util para colecciones con varios videos musicales</li>
+                                <li>Moods: a system that allows grouping posts into collections related to different moods or aesthetics</li>
+                                <li>Live notifications</li>
+                                <li>Playlist: allow the videos of a moods collection to be played in a pop-up window. Especially useful for collections with multiple music videos</li>
                             </ul>
                         </div>
                     </div>

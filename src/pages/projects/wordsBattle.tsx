@@ -33,17 +33,17 @@ const WordsBattle = ()=> {
             <div ref={elementRef} className={style.container}>
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
-                        <div className={style.title}>Concepto</div>
+                        <div className={style.title}>Concept</div>
                         <div className={style.content}>
-                        Words Battle es un juego en linea que permite a dos jugadores poner a prueba sus habilidades de formación de palabras. Estos tendrán que conectar letras para formar palabras que infligen daño a la barra del vida del otro jugador. Mientras mas larga la palabra, o mientas mas letras raras contenga, mayor será el daño.  
+                        Words Battle is an online game that allows two players to test their word-forming skills. They will have to connect letters to form words that inflict damage to the other player's health bar. The longer the word, or the more rare letters it contains, the greater the damage. 
                         </div>
                     </div>
                     <img src={words_battle_desk.src} className={`${style.post} ${style.fade2}`} alt="" />
                     <div className={`${style.text} ${style.post} ${style.fade3}`}>
-                        <div className={style.title}>Tecnologías utilizadas</div>
+                        <div className={style.title}>Technologies Used</div>
                         <div className={`${style.content} ${style.flexed}`}>
                             <div>
-                                <div className={style.subtitle}>Lenguaje</div>
+                                <div className={style.subtitle}>Language</div>
                                 <ul className={style.list}>
                                     <li>Typescript</li>
                                 </ul>
@@ -66,19 +66,19 @@ const WordsBattle = ()=> {
                         </div>
                     </div>
                     <div className={`${style.text} ${style.post} ${style.fade4}`}>
-                        <div className={style.title}>Funcionalidad</div>
+                        <div className={style.title}>Functionality</div>
                         <div className={style.content}>
-                        <p>La aplicación tiene las funciones básicas de un juego online. Este permite crear una sala de juego y permitir que otro usuario se una. Durante el turno de cada jugador, el otro tendrá determinadas funciones deshabilitadas.</p><br></br>
-                        <p>Del lado del servidor, el nombre de la sala quedará reservado para que nadie pueda crear una sala con el mismo nombre. Una vez que el host haya finalizado la sesión, el nombre volverá a estar disponible.</p><br></br>
-                        <p>La definición de cada palabra formada aparecera en la pantalla para evacuar cualquier duda de su validez. De todos modos, si la palabra no es válida, no se podra realizar el daño.</p>
+                        <p>The application has the basic functions of an online game. It allows creating a game room and allowing another user to join. During each player's turn, certain functions will be disabled for the other player.</p><br></br>
+                        <p>On the server side, the name of the room will be reserved so that no one can create a room with the same name. Once the host has finished the session, the name will become available again.</p><br></br>
+                        <p>The definition of each formed word will appear on the screen to clarify any doubts about its validity. However, if the word is not valid, the damage cannot be dealt.</p>
                         </div>
                     </div>
                     <div className={`${style.text} ${style.post} ${style.fade5}`}>
-                        <div className={style.title}>Próximas implementaciones</div>
+                        <div className={style.title}>Upcoming Implementations</div>
                         <div className={style.content}>
                             <ul className={style.list}>
-                                <li>Red social: permitir a los usuarios compartir sus prompts o agregar prompts creados por otros usuarios, así como seguirlos</li>
-                                <li>Opciones específicas optimizadas para cada IA</li>
+                                <li>Social network: allow users to share their prompts or add prompts created by other users, as well as follow them</li>
+                                <li>Specific options optimized for each AI</li>
                             </ul>
                         </div>
                     </div>

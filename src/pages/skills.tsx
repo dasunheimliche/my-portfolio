@@ -35,7 +35,7 @@ const Skills = ()=> {
                     </div>
                 </div>
                 <div className={`${style.topic} ${style.fade4}`}>
-                    <div className={style.title}>Lenguajes</div>
+                    <div className={style.title}>Languages</div>
                     <div className={style.list}>
                         <ul>
                             <li>Javascript</li>
@@ -49,13 +49,13 @@ const Skills = ()=> {
                     <div className={style.title}>Soft Skills</div>
                     <div className={style.list}>
                         <ul>
-                            <li>Autodidacta</li>
-                            <li>Comprometido</li>
-                            <li>Participativo</li>
-                            <li>Creativo</li>
+                            <li>Self-taught</li>
+                            <li>Committed</li>
+                            <li>Participative</li>
+                            <li>Creative</li>
                             <li>Adaptable</li>
-                            <li>Detallista</li>
-                            <li>Entusiasta</li>
+                            <li>Detail-oriented</li>
+                            <li>Enthusiastic</li>
                         </ul>
                     </div>
                 </div>
