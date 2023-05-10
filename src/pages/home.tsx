@@ -21,7 +21,7 @@ const HomePage = ()=> {
         setLoading(false)
     }
 
-    console.log("SWIPE DIRECTION", swipeDirection)
+    console.log("IS WIDTH 500", isWidth500)
 
     useEffect(()=> {
         if (swipeDirection === null) {

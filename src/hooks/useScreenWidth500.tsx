@@ -8,11 +8,19 @@ const useScreenWidth = () => {
       setIsScreenBelow500px(window.innerWidth <= 500);
     };
 
-    window.addEventListener('resize', handleResize);
+    const updateScreenSize = () => {
+      setIsScreenBelow500px(window.innerWidth <= 500);
+    };
 
-    // Limpia el listener cuando el componente es desmontado
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+      updateScreenSize();
+    }
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleResize);
+      }
     };
   }, []);
 
