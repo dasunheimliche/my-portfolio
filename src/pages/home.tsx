@@ -7,11 +7,14 @@ import { AppContext } from './_app'
 
 import { useRouter } from 'next/router'
 import useSwipeDirection from '@/hooks/useSwipeDirection'
+import useScreenWidth from '@/hooks/useScreenWidth500'
 
 const HomePage = ()=> {
 
     const {loading, setLoading} = useContext(AppContext)
     const swipeDirection = useSwipeDirection();
+    const isWidth500 = useScreenWidth()
+
     let page = useRouter()
 
     const imgIsLoaded = ()=> {
@@ -44,7 +47,12 @@ const HomePage = ()=> {
             <div className="main-content">
                 <h1 className="main-title neonText fade2">WELCOME TO MY PORTFOLIO</h1>
                 <div className="main-subtitle fade3">Hi! My name is Claussimar Rodríguez and I am a fullstack web developer with a focus on frontend. I hope you can see in my projects and your visit through my portfolio my attention to details and achieving an aesthetically pleasing and simple user experience.</div>
-                <button className='main-button fade4'>DOWNLOAD MY CV</button>
+                <div className="main-content-buttons">
+                    {!isWidth500 && <button className='main-button arrow fade4'>{"SKILLS"}</button>}
+                    {!isWidth500 && <button className='main-button arrow fade4'>{"PROJECTS"}</button>}
+                    {!isWidth500 && <button className='main-button arrow fade4'>{"CONTACT"}</button>}
+                    {isWidth500 && <button className='main-button arrow fade1'>{"SWIPE TO NAVIGATE"}</button>}
+                </div>
             </div>
         </div>
     )
