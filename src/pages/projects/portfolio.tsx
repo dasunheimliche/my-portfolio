@@ -8,12 +8,30 @@ import portfolio_desk from '../../images/portfolio_desk.jpg'
 import portfolio_inspi from '../../images/portfolio_inspi.png'
 import git from '../../icons/github.png'
 
+import { useRouter } from 'next/router'
+import useSwipeDirection from '@/hooks/useSwipeDirection'
 import useScrollDirection from '@/hooks/isScrollingUp'
 
 const portfolio = ()=> {
     const {isRecruiter, setIsScrollUp, setLoading } = useContext(AppContext)
     const elementRef = useRef(null);
     const isScrollingDown = useScrollDirection(elementRef);
+
+    const swipeDirection = useSwipeDirection();
+    let page = useRouter()
+
+    useEffect(()=> {
+        if (swipeDirection === null) {
+            return
+        }
+        if (swipeDirection === false ) {
+            page.push('/contact')
+        } 
+        if (swipeDirection === true) {
+            page.push('/projects/wordsBattle')
+        }
+
+    }, [swipeDirection])
 
     useEffect(()=>{
         setLoading(false)

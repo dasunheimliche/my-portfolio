@@ -1,22 +1,34 @@
 import Image from 'next/image'
-import { useState } from 'react'
 import landscape_back from '../../public/background-h.png'
 import portrait_back from '../../public/background-v.png'
 
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { AppContext } from './_app'
+
+import { useRouter } from 'next/router'
+import useSwipeDirection from '@/hooks/useSwipeDirection'
 
 const HomePage = ()=> {
 
     const {loading, setLoading} = useContext(AppContext)
-
-    // let [ loading, setLoadig ] = useState<boolean>(true)
+    const swipeDirection = useSwipeDirection();
+    let page = useRouter()
 
     const imgIsLoaded = ()=> {
         setLoading(false)
     }
 
-    console.log("LOADING?", loading)
+    console.log("SWIPE DIRECTION", swipeDirection)
+
+    useEffect(()=> {
+        if (swipeDirection === null) {
+            return
+        }
+        console.log("USE EFFECT CONDITIONAL", swipeDirection === false)
+        if (swipeDirection === false) {
+            page.push('/skills')
+        }
+    }, [swipeDirection])
 
     return (
 

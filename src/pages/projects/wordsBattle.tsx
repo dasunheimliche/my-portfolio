@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { useContext, useEffect, useRef } from 'react'
 import { AppContext } from '../_app'
 
+import { useRouter } from 'next/router'
+import useSwipeDirection from '@/hooks/useSwipeDirection'
 import useScrollDirection from '@/hooks/isScrollingUp'
 
 import style from '../../styles/projects.module.css'
@@ -14,6 +16,22 @@ const WordsBattle = ()=> {
 
     const elementRef = useRef(null);
     const isScrollingDown = useScrollDirection(elementRef);
+
+    const swipeDirection = useSwipeDirection();
+    let page = useRouter()
+
+    useEffect(()=> {
+        if (swipeDirection === null) {
+            return
+        }
+        if (swipeDirection === false ) {
+            page.push('/projects/portfolio')
+        } 
+        if (swipeDirection === true) {
+            page.push('/projects/promptify')
+        }
+
+    }, [swipeDirection])
 
     useEffect(()=>{
         setLoading(false)

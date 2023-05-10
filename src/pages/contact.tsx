@@ -7,9 +7,28 @@ import linkedin from '../icons/linkedin.png'
 import { useContext, useEffect } from 'react'
 import { AppContext } from './_app'
 
+import { useRouter } from 'next/router'
+import useSwipeDirection from '@/hooks/useSwipeDirection'
+
 
 const Contact = ()=> {
     const {isRecruiter, setLoading} = useContext(AppContext)
+
+    const swipeDirection = useSwipeDirection();
+    let page = useRouter()
+
+    useEffect(()=> {
+        if (swipeDirection === null) {
+            return
+        }
+        if (swipeDirection === false ) {
+            return
+        } 
+        if (swipeDirection === true) {
+            page.push('/projects/portfolio')
+        }
+
+    }, [swipeDirection])
 
     useEffect(()=>{
         setLoading(false)

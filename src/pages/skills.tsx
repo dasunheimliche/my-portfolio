@@ -1,14 +1,33 @@
 import { useContext, useEffect } from 'react'
 import { AppContext } from './_app'
 
+import { useRouter } from 'next/router'
+import useSwipeDirection from '@/hooks/useSwipeDirection'
+
 import style from '../styles/skills.module.css'
 
 const Skills = ()=> {
     const {setLoading} = useContext(AppContext)
 
+    const swipeDirection = useSwipeDirection();
+    let page = useRouter()
+
     useEffect(()=>{
         setLoading(false)
     }, [])
+
+    useEffect(()=> {
+        if (swipeDirection === null) {
+            return
+        }
+        if (swipeDirection === false) {
+            page.push('/projects/zahir')
+        } 
+        if (swipeDirection === true) {
+            page.push('/home')
+        }
+
+    }, [swipeDirection])
 
 
     return (
