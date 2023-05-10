@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { Dispatch, createContext, useEffect, useState } from 'react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
+import axios from 'axios'
 
 import queryString from 'query-string'
 
@@ -42,7 +43,18 @@ export default function App({ Component, pageProps }: AppProps) {
 
   //=================================
 
+  useEffect(()=> {
+		axios.get('https://words-battle-api.onrender.com/despertar')
+			.then(_response => {
+				console.log("waking up battle words onrender server")
+			})
+			.catch(error => console.error('Error al despertar el servidor:', error));
 
+      axios.get('https://zahir-api.onrender.com/api/register')
+        .then(()=> {
+          console.log("waking up zahir onrender server")
+        })
+	}, []);
 
   //=================================
 
