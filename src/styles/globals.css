@@ -1095,6 +1095,12 @@ body {
 }
 
 @media (max-width: 500px) and (orientation: portrait) {
+
+  .scanlines:after {
+    background-size: 100% 4px;
+    background-size: 100% 1px;
+  }
+
   .main {
     width: calc(100% - 0px);
     height: calc(100% - 0px);
