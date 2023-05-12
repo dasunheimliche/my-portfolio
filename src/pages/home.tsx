@@ -21,13 +21,10 @@ const HomePage = ()=> {
         setLoading(false)
     }
 
-    console.log("IS WIDTH 500", isWidth500)
-
     useEffect(()=> {
         if (swipeDirection === null) {
             return
         }
-        console.log("USE EFFECT CONDITIONAL", swipeDirection === false)
         if (swipeDirection === false) {
             page.push('/skills')
         }
@@ -48,9 +45,9 @@ const HomePage = ()=> {
                 <h1 className="main-title neonText fade2">WELCOME TO MY PORTFOLIO</h1>
                 <div className="main-subtitle fade3">Hi! My name is Claussimar Rodríguez and I am a fullstack web developer with a focus on frontend. I hope you can see in my projects and your visit through my portfolio my attention to details and achieving an aesthetically pleasing and simple user experience.</div>
                 <div className="main-content-buttons">
-                    {!isWidth500 && <button className='main-button arrow fade4'>{"SKILLS"}</button>}
-                    {!isWidth500 && <button className='main-button arrow fade4'>{"PROJECTS"}</button>}
-                    {!isWidth500 && <button className='main-button arrow fade4'>{"CONTACT"}</button>}
+                    {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/skills')}>{"SKILLS"}</button>}
+                    {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/projects/zahir')}>{"PROJECTS"}</button>}
+                    {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/contact')}>{"CONTACT"}</button>}
                     {isWidth500 && <button className='main-button arrow fade1'>{"SWIPE TO NAVIGATE"}</button>}
                 </div>
             </div>
