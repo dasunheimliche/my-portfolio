@@ -72,7 +72,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <AppContext.Provider value={{isRecruiter, isScrollUp, setIsScrollUp, loading, setLoading}}>
-      <div className='main'>
+      <div className='main scanlines'>
         <img src="" alt="" />
         <div style={loading? {opacity: "0"} : {opacity: "1"}}><Header/></div>
         <div style={loading? {opacity: "0"} : {opacity: "1"}}><Subheader /></div>
