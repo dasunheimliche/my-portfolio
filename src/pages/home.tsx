@@ -43,7 +43,7 @@ const HomePage = ()=> {
             </div>
             <div className="main-content">
                 <h1 className="main-title neonText fade2">WELCOME TO MY PORTFOLIO</h1>
-                <div className="main-subtitle fade3">Hi! My name is Claussimar Rodríguez and I am a fullstack web developer with a focus on frontend. I hope you can see in my projects and your visit through my portfolio my attention to details and achieving an aesthetically pleasing and simple user experience.</div>
+                <div className="main-subtitle fade3">Hello, I'm Claussimar Rodríguez, a frontend-focused full-stack web developer. The projects showcased here are ones I use daily and were conceived to fulfill an unmet need left by existing apps. I hope you can see in your visit through my portfolio my commitment to creating visually appealing and user-friendly experiences.</div>
                 <div className="main-content-buttons">
                     {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/skills')}>{"SKILLS"}</button>}
                     {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/projects/zahir')}>{"PROJECTS"}</button>}

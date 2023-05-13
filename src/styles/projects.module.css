@@ -13,6 +13,8 @@
 } */
 
 
+
+
 @keyframes fadeIn { /* ADAPTAR */
     0% {
       opacity: 0;
@@ -226,11 +228,13 @@
 .content {
     margin-top: 7px;
     color: white;
-    font-size: 19px;
+    font-size: 18px;
     white-space: pre-line;
 
     white-space: pre-wrap;
     word-wrap: break-word;
+
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .flexed {
@@ -399,7 +403,7 @@
     
     .content {
         margin-top: 6px;
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .flexed {
@@ -482,7 +486,7 @@
     
     .content {
         margin-top: 5px;
-        font-size: 14px;
+        font-size: 13px;
     }
     
     .flexed {
