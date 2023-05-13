@@ -195,8 +195,6 @@
 
     break-inside: avoid;
     margin-bottom: 250px;
-
-    overscroll-behavior: contain;
 }
 
 .post {

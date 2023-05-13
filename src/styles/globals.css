@@ -104,6 +104,8 @@ body {
   background-color: rgb(61, 61, 61);
   background-color: rgb(35, 35, 35);
   font-family: 'PT Sans Caption', sans-serif;
+
+  overscroll-behavior: contain;
 }
 
 .pointer {
