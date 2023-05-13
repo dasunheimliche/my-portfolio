@@ -276,11 +276,8 @@ body {
 
 .selectedS {
   filter: drop-shadow(0 0 5px #ffffff);
-  /* font-size: 14px; */
   transform: scaley(1.45);
   font-weight: bolder;
-
-  /* transition: font-size 0.1s; */
   transition: transform 0.15s;
 }
 
