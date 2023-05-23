@@ -79,6 +79,7 @@
 
     background: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
     background: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#f97d6f 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
     /* background: linear-gradient(-90deg, #341e66 0%, rgb(46, 72, 131) 37%, rgb(173, 66, 178) 69%, #f55d85 100%); */
 
     background-size: 100%;

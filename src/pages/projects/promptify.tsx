@@ -51,10 +51,9 @@ const Promptify = ()=> {
             <div ref={elementRef} className={style.container}>
             <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
-                        <div className={style.title}>Concept</div>
+                        <div className={style.title}>Concept: I needed a prompt organizer, so I made one!</div>
                         <div className={style.content}>
-                        Promptify is an online platform designed to help users create and organize prompts for artificial intelligence projects. The tool allows users to create custom prompt cards that can be used in a variety of AI projects. Users can create both simple prompts and complex script sequences, and then save them on cards for quick access. Promptify is an effective solution for those looking to improve the efficiency of their AI projects, as prompt organization can save time and increase productivity. 
-                        </div>
+                        Promptify is a prompt organizer inspired by ordinary note organizers, but with functionalities aimed at organizing and saving prompts and prompt chains.                        </div>
                     </div>
                     <img src={promptify_desk.src} className={`${style.post} ${style.fade2}`} alt="" />
                     <div className={`${style.text} ${style.post} ${style.fade3}`}>

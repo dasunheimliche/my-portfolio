@@ -51,9 +51,9 @@ const WordsBattle = ()=> {
             <div ref={elementRef} className={style.container}>
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
-                        <div className={style.title}>Concept</div>
+                        <div className={style.title}>Concept: Bookworms, but in the form of an online multiplayer game.</div>
                         <div className={style.content}>
-                        Words Battle is an online game that allows two players to test their word-forming skills. They will have to connect letters to form words that inflict damage to the other player's health bar. The longer the word, or the more rare letters it contains, the greater the damage. 
+                        Bookworms was one of my favorite childhood games, but I always regretted not being able to play against other users. So, I decided to create my own online version for two players. Form words by connecting the letters on the grid and accumulate points to decrease your opponent's life bar.
                         </div>
                     </div>
                     <img src={words_battle_desk.src} className={`${style.post} ${style.fade2}`} alt="" />
