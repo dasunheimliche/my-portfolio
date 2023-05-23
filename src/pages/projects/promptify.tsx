@@ -53,7 +53,7 @@ const Promptify = ()=> {
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
                         <div className={style.title}>Concept: I needed a prompt organizer, so I made one!</div>
                         <div className={style.content}>
-                        Promptify is a prompt organizer inspired by ordinary note organizers, but with functionalities aimed at organizing and saving prompts and prompt chains.                        </div>
+                        Promptify is a fullstack prompt organizer inspired by ordinary note organizers, but with functionalities aimed at organizing and saving prompts and prompt chains.                        </div>
                     </div>
                     <img src={promptify_desk.src} className={`${style.post} ${style.fade2}`} alt="" />
                     <div className={`${style.text} ${style.post} ${style.fade3}`}>
