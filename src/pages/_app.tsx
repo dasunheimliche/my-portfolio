@@ -11,6 +11,9 @@ import Header from '../components/Header'
 import Subheader from '../components/Subheader'
 import React from 'react'
 
+import Head from 'next/head';
+
+
 interface AppContext {
   isRecruiter: boolean
   isScrollUp: boolean
@@ -73,6 +76,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <AppContext.Provider value={{isRecruiter, isScrollUp, setIsScrollUp, loading, setLoading}}>
       <div className='main scanlines'>
+        <Head>
+          <title>Claussimar's portfolio</title>
+        </Head>
         <img src="" alt="" />
         <div style={loading? {opacity: "0"} : {opacity: "1"}}><Header/></div>
         <div style={loading? {opacity: "0"} : {opacity: "1"}}><Subheader /></div>
