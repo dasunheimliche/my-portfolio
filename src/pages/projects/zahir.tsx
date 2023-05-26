@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useContext, useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import { AppContext } from '../_app'
 
 import { useRouter } from 'next/router'
@@ -34,7 +34,6 @@ const Zahir = ()=> {
 
     }, [swipeDirection])
 
-
     useEffect(()=>{
         setLoading(false)
     }, [])
@@ -43,6 +42,7 @@ const Zahir = ()=> {
         setIsScrollUp(isScrollingDown)
     }, [isScrollingDown])
 
+
     return (
         <>
             <div className={style.header}>
@@ -50,7 +50,7 @@ const Zahir = ()=> {
                 <Link href={"https://zahir-pink.vercel.app/"} target='_blank'><img src={url.src} alt="url" /></Link>
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/el_zahir"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
-            <div ref={elementRef} className={style.container}>
+            <div ref={elementRef} className={`${style.container}`}>
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
                         <div className={style.title}>Concept: My ideal Tumblr. A different social network.</div>

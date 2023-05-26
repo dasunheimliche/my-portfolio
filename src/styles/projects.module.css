@@ -13,8 +13,6 @@
 } */
 
 
-
-
 @keyframes fadeIn { /* ADAPTAR */
     0% {
       opacity: 0;
@@ -174,7 +172,10 @@
     overflow: auto;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none; 
+}
 
+.locked {
+    overflow: hidden;
 }
 
 .container::-webkit-scrollbar {
