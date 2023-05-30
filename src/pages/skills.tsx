@@ -132,7 +132,7 @@ const Skills = ()=> {
                         </div>
                     </div>
                     <div className={style.topic2}>
-                        <div className={style.title}>Dadabase</div>
+                        <div className={style.title}>Database</div>
                         <div className={style.list2}>
                             <div className={style.item}>
                                 <div className={style.itemImg}>
