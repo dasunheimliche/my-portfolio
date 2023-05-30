@@ -53,7 +53,7 @@ const Skills = ()=> {
             <div className={style.container}>
                 <div className={style.row0}>Skills</div>
                 <div className={style.row1}>
-                    <div className={style.topic2}>
+                    <div className={`${style.topic2} fade1`}>
                         <div className={style.title}>Frontend</div>
                         <div className={style.list2}>
                             <div className={style.item}>
@@ -82,7 +82,7 @@ const Skills = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className={style.topic2}>
+                    <div className={`${style.topic2} fade2`}>
                         <div className={style.title}>Backend</div>
                         <div className={style.list2}>
                             <div className={style.item}>
@@ -110,11 +110,10 @@ const Skills = ()=> {
                                 <div className={style.itemTag}>Socket.io</div>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div> 
                 </div>
                 <div className={style.row2}>
-                    <div className={style.topic2}>
+                    <div className={`${style.topic2} fade3`}>
                         <div className={style.title}>Languages</div>
                         <div className={style.list2}>
                             <div className={style.item}>
@@ -131,7 +130,7 @@ const Skills = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div className={style.topic2}>
+                    <div className={`${style.topic2} fade4`}>
                         <div className={style.title}>Database</div>
                         <div className={style.list2}>
                             <div className={style.item}>
@@ -148,7 +147,7 @@ const Skills = ()=> {
                             </div>
                         </div>
                     </div>
-                    <div id={style.others} className={style.topic2}>
+                    <div id={style.others} className={`${style.topic2} fade5`}>
                         <div className={style.title}>Others</div>
                         <div className={style.list2}>
                             <div className={style.item}>
@@ -173,7 +172,7 @@ const Skills = ()=> {
                     </div>
                 </div>
                 <div className={style.row22}>
-                    <div className={style.topic2}>
+                    <div className={`${style.topic2} fade5`}>
                         <div className={style.title}>Others</div>
                         <div className={style.list2}>
                             <div className={style.item}>
@@ -198,7 +197,7 @@ const Skills = ()=> {
                     </div>
                 </div>
                 <div className={style.row3}>
-                    <div className={style.topic2}>
+                    <div className={`${style.topic2} fade6`}>
                         <div className={style.title}>Soft Skills</div>
                         <div className={style.list3}>
                             <ul>
@@ -215,7 +214,7 @@ const Skills = ()=> {
                         </div>
 
                     </div>
-                    <div id={style.academic} className={style.topic2}>
+                    <div id={style.academic} className={`${style.topic2} fade7`}>
                         <div className={style.title}>Other academic skills</div>
                         <div className={style.list3}>
                             <ul>
@@ -233,7 +232,7 @@ const Skills = ()=> {
                     </div>
                 </div>
                 <div className={style.row33}>
-                <div className={style.topic2}>
+                <div className={`${style.topic2} fade7`}>
                         <div className={style.title}>Other academic skills</div>
                         <div className={style.list3}>
                             <ul>
