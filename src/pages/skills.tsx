@@ -226,7 +226,7 @@ const Skills = ()=> {
                             <ul>
                                 <li>Chemistry (organic, innorganic)</li>
                                 <li>Food engineering (Industry I, II, III, etc.)</li>
-                                <li>Bromayology (I, II, III)</li>
+                                <li>Bromatology (I, II, III)</li>
                             </ul>
                         </div>
                     </div>
@@ -238,6 +238,7 @@ const Skills = ()=> {
                             <ul>
                                 <li>Mathemathics (I, II, II)</li>
                                 <li>Physics (I, II)</li>
+                                <li>Physical Chemistry</li>
                                 <li>Microbiology (I, II, III)</li>
                                 <li>Chemistry (organic, innorganic)</li>
                                 <li>Food engineering (Industries I, II, III, etc.)</li>
