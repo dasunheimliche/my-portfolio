@@ -78,7 +78,7 @@ const Promptify = ()=> {
                                 <ul className={style.list}>
                                     <li>NodeJS</li>
                                     <li>MongoDB</li>
-                                    <li>Graphql</li>
+                                    <li>GraphQL</li>
                                 </ul>
                             </div>
                         </div>
