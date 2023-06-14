@@ -60,7 +60,7 @@ const Contact = ()=> {
                             </a>
                         </li>
                         <li id={style.fourth}> 
-                            <a href='https://linkedin.com/in/clau-rodríguez-209277275' target="_blank" rel="noopener noreferrer">
+                            <a href='https://linkedin.com/in/claussimar-rodríguez-209277275' target="_blank" rel="noopener noreferrer">
                                 <span>/clau-rodríguez-209277275</span>
                                 <img src={linkedin.src} alt="linkedin" />
                             </a>
