@@ -7,6 +7,8 @@ import useSwipeDirection from '@/hooks/useSwipeDirection'
 import useScrollDirection from '@/hooks/isScrollingUp'
 
 
+// import useWheelDown from '@/hooks/isWheelDown'
+
 import style from '../../styles/projects.module.css'
 import zahir_desk from '../../images/zahir-desktop.jpg'
 import url from '../../icons/url1.png'
@@ -20,6 +22,25 @@ const Zahir = ()=> {
 
     const swipeDirection = useSwipeDirection();
     let page = useRouter()
+
+
+    // let [locked, setLocked] = useState(false) 
+    // let isWheelDown = useWheelDown() 
+    // console.log("TEST", locked)
+
+  
+
+    // useEffect(() => {
+    //     setLocked(false)
+    //     if (isWheelDown) {
+    //         setLocked(true)
+    //         setTimeout(()=>{
+    //             setLocked(false)
+    //         },1)
+    //     } else {
+    //         setLocked(false)
+    //     }
+    // }, [isWheelDown]);
 
     useEffect(()=> {
         if (swipeDirection === null) {
@@ -51,16 +72,14 @@ const Zahir = ()=> {
                 {isRecruiter && <Link href={"https://github.com/dasunheimliche/el_zahir"} target='_blank'><img src={git.src} alt="github" /></Link>}
             </div>
             <div ref={elementRef} className={`${style.container}`}>
+            {/* <div ref={elementRef} className={locked? `${style.container} ${style.locked}` : style.container} > */}
                 <div className={style.project}>
                     <div className={`${style.text} ${style.post} ${style.fade1}`}>
                         <div className={style.title}>Concept: My ideal Tumblr. A different social network.</div>
-                        {/* <div className={style.content}>
-                            Zahir is a unique social network that aims to become a sanctuary for those seeking a space to store and access their favorite multimedia content without being influenced by fads or trends. This platform allows users to save and protect their favorite songs, images, and videos, and access them at any time without unnecessary distractions.
-                        </div> */}
                         <div className={style.content}>
-<p>Zahir is a social network whose objective is to store and share multimedia content that has marked the user in a lasting and meaningful way. In contrast to the rest of the content, which may generate a great impact but quickly fades from the user's thoughts.</p><br />
-<p>It is a social network strongly inspired by Tumblr but with a more specific orientation and purpose. Users' posts offer glimpses into their obsessions, aesthetic and intellectual pursuits, or safe havens they repeatedly return to.</p><br />
-<p>Zahir is an expression from 16th-century Islamic mythology that means <i>"something that, once seen, can never be forgotten."</i></p>
+                            <p>Zahir is a social network whose objective is to store and share multimedia content that has marked the user in a lasting and meaningful way. In contrast to the rest of the content, which may generate a great impact but quickly fades from the user's thoughts.</p><br />
+                            <p>It is a social network strongly inspired by Tumblr but with a more specific orientation and purpose. Users' posts offer glimpses into their obsessions, aesthetic and intellectual pursuits, or safe havens they repeatedly return to.</p><br />
+                            <p>Zahir is an expression from 16th-century Islamic mythology that means <i>"something that, once seen, can never be forgotten."</i></p>
                         </div>
                     </div>
                     <img src={zahir_desk.src} className={`${style.post} ${style.fade2}`} alt="" />

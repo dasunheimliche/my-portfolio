@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import landscape_back from '../../public/background-h.png'
-import portrait_back from '../../public/background-v.png'
+import landscape_back from '../../public/background-h.jpg'
+import portrait_back from '../../public/background-v.jpg'
 
 import { useContext, useEffect } from 'react'
 import { AppContext } from './_app'
@@ -48,7 +48,7 @@ const HomePage = ()=> {
                     {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/skills')}>{"SKILLS"}</button>}
                     {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/projects/zahir')}>{"PROJECTS"}</button>}
                     {!isWidth500 && <button className='main-button arrow fade4' onClick={()=>page.push('/contact')}>{"CONTACT"}</button>}
-                    {isWidth500 && <button className='main-button arrow fade1'>{"SWIPE TO NAVIGATE"}</button>}
+                    {isWidth500  && <button className='main-button arrow fade1'>{"SWIPE TO NAVIGATE"}</button>}
                 </div>
             </div>
         </div>

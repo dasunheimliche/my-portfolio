@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 function useScrollDirection(elementRef:any) {
   const [isScrollingDown, setIsScrollingDown] = useState(false);

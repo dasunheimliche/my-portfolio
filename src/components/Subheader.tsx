@@ -3,13 +3,16 @@ import { useRouter } from "next/router"
 import { useContext } from "react"
 import { AppContext } from "@/pages/_app"
 
+import useWheelDown from "@/hooks/isWheelDown"
+
 const Subheader = ()=> {
     let page = useRouter().pathname.substring(1)
     let project = useRouter()
 
-    let { isScrollUp } = useContext(AppContext)
+    // let isWheelDown = useWheelDown()
+    // console.log("IS WHEEL DOWN?", isWheelDown)
 
-    console.log("RUTA", page)
+    let { isScrollUp } = useContext(AppContext)
 
     const toZahir = ()=> {
         project.push('/projects/zahir')
