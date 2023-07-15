@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }
 
-  let [ isRecruiter, setIsRecruiter ] = useState<boolean>(isRec? isRec : false)
+  let [ isRecruiter, setIsRecruiter ] = useState<boolean>(isRec? isRec : true)
   let [ isScrollUp, setIsScrollUp ] = useState<boolean>(false)
   let [ loading, setLoading ] = useState<boolean>(true)
 

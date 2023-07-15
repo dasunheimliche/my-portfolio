@@ -41,10 +41,10 @@ const Contact = ()=> {
             <div className={style.container}>
                 <div className={style.list}>
                     <ul>
-                        <li id={style.first}>
-                            <a href="https://wa.me/541157739126" target="_blank" rel="noopener noreferrer">
-                                <span>11 5773 9126</span>
-                                <img src={whatsapp.src} alt="whatsapp" />
+                        <li id={style.first}> 
+                            <a href='https://linkedin.com/in/claussimar' target="_blank" rel="noopener noreferrer">
+                                <span>/claussimar</span>
+                                <img src={linkedin.src} alt="linkedin" />
                             </a>
                         </li>
                         {isRecruiter && <li id={style.second}>
@@ -53,16 +53,16 @@ const Contact = ()=> {
                                 <img src={git.src} alt="github" />
                             </a>
                         </li>}
-                        <li id={style.third}>
-                            <a href="mailto:clrdriguez89@gmail.com" target="_blank" rel="noopener noreferrer">
-                                <span>clrdriguez89@gmail.com</span>
-                                <img src={mailIcon.src} alt="email" />
+                        {/* <li id={style.third}>
+                            <a href="https://wa.me/541157739126" target="_blank" rel="noopener noreferrer">
+                                <span>11 5773 9126</span>
+                                <img src={whatsapp.src} alt="whatsapp" />
                             </a>
-                        </li>
-                        <li id={style.fourth}> 
-                            <a href='https://linkedin.com/in/claussimar-rodríguez-209277275' target="_blank" rel="noopener noreferrer">
-                                <span>/clau-rodríguez-209277275</span>
-                                <img src={linkedin.src} alt="linkedin" />
+                        </li> */}
+                        <li id={style.third}>
+                            <a href="mailto:dasunheimliche7@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <span>dasunheimliche7@gmail.com</span>
+                                <img src={mailIcon.src} alt="email" />
                             </a>
                         </li>
                     </ul>
