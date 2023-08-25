@@ -57,7 +57,7 @@ const Zahir = () => {
             className={`${style.post} ${style.fade2}`}
             alt=""
           />
-          <section className={`${style.text} ${style.post} ${style.fade3}`}>
+          <section className={`${style.text} ${style.post} ${style.fade1}`}>
             <div className={style.title}>Used technologies</div>
             <div className={`${style.content} ${style.flexed}`}>
               <div>
@@ -86,7 +86,7 @@ const Zahir = () => {
               </div>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade4}`}>
+          <section className={`${style.text} ${style.post} ${style.fade1}`}>
             <div className={style.title}>Functionality</div>
             <div className={style.content}>
               <p>
@@ -102,7 +102,7 @@ const Zahir = () => {
               </p>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade5}`}>
+          <section className={`${style.text} ${style.post} ${style.fade1}`}>
             <div className={style.title}>Upcoming features</div>
             <div className={style.content}>
               <ul className={style.list}>

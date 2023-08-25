@@ -1,6 +1,6 @@
 import Providers from "@/components/Providers";
-import Header from "./header";
-import SubHeader from "./SubHeader";
+import Header from "@/components/Header";
+import SubHeader from "@/components/SubHeader";
 import SwipeController from "@/components/SwipeController";
 
 import "@/styles/globals.css";

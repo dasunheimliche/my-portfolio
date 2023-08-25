@@ -1,284 +1,146 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
 
-@keyframes fadeIn { /* ADAPTAR */
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-
 
 .container {
-    /* outline: 5px solid red;
-    outline-offset: -5px; */
-    width: calc(100%);
-    height: calc(100% - 145px);
+  width: calc(100%);
+  height: calc(100% - 9.06rem);
 
-    /* margin-left: 75px;
-    margin-right: 75px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 200;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 200;
 }
 
-
 .container ul {
-    font-size: 53px;
-    color: rgb(235, 235, 235);
-    margin-bottom: 80px;
-    margin-right: 100px;
+  font-size: 3.31rem;
+  color: rgb(235, 235, 235);
+  margin-bottom: 5rem;
+  margin-right: 6.25rem;
 }
 
 .container li {
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    letter-spacing: 3px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  letter-spacing: 0.19rem;
 
-    text-shadow:
-    0 0 7px #fff,
-    /* 0 0 10px #fff, */
-    /* 0 0 21px #fff, */
-    /* 0 0 42px #ffffff,
-    0 0 82px #ffffff, */
-    /* 0 0 92px #ffffff,
-    0 0 102px #ffffff, */
-    0 0 101px #ffffff;
-
-    /* animation: fadeIn 0.5s ease-in-out; */
+  text-shadow: 0 0 0.44rem #fff, 0 0 6.31rem #ffffff;
 }
 
 .container a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .listMobile {
-    display: none;
+  display: none;
 }
 
 #first {
-    animation: fadeIn 0.5s ease-in-out;
-    display: flex;
-    align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 #first img {
-    width: auto;
-    height: 43px;
-    margin-left: 15px;
-    opacity: 0.7;
+  width: auto;
+  height: 2.69rem;
+  margin-left: 0.94rem;
+  opacity: 0.7;
 }
 
 #second {
-    animation: fadeIn 0.7s ease-in-out;
-    display: flex;
-    align-items: center;
+  animation: fadeIn 0.7s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 #second img {
-    width: auto;
-    height: 43px;
-    margin-left: 15px;
-    opacity: 0.7;
+  width: auto;
+  height: 2.69rem;
+  margin-left: 0.94rem;
+  opacity: 0.7;
 }
 
 #third {
-    animation: fadeIn 0.9s ease-in-out;
-    display: flex;
-    align-items: center;
+  animation: fadeIn 0.9s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 #third img {
-    width: auto;
-    height: 43px;
-    margin-left: 15px;
-    opacity: 0.7;
+  width: auto;
+  height: 2.69rem;
+  margin-left: 0.94rem;
+  opacity: 0.7;
 }
 
 #fourth {
-    animation: fadeIn 1.1s ease-in-out;
-    display: flex;
-    align-items: center;
+  animation: fadeIn 1.1s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 #fourth img {
-    width: auto;
-    height: 43px;
-    margin-left: 15px;
-    opacity: 0.7;
+  width: auto;
+  height: 2.69rem;
+  margin-left: 0.94rem;
+  opacity: 0.7;
 }
-
-
-
-/* ================================================= */
-
-
-/* .container {
-    height: calc(100% - 145px);
-}
-
-
-.container ul {
-    font-size: 53px;
-    margin-bottom: 80px;
-    margin-right: 100px;
-}
-
-.container li {
-    letter-spacing: 3px;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 101px #ffffff;
-}
-
-#first img {
-    height: 43px;
-    margin-left: 15px;
-}
-
-#second img {
-    height: 43px;
-    margin-left: 15px;
-}
-
-#third img {
-    height: 43px;
-    margin-left: 15px;
-}
-
-#fourth img {
-    height: 43px;
-    margin-left: 15px;
-} */
 
 @media (max-width: 1600px) {
-    .container {
-        height: calc(100% - 121px);
-    }
-    
-    
-    .container ul {
-        font-size: 44px;
-        margin-bottom: 67px;
-        margin-right: 83px;
-    }
-    
-    .container li {
-        letter-spacing: 2px;
-        text-shadow:
-        0 0 6px #fff,
-        0 0 84px #ffffff;
-    }
-    
-    #first img {
-        height: 36px;
-        margin-left: 12px;
-    }
-    
-    #second img {
-        height: 36px;
-        margin-left: 12px;
-    }
-    
-    #third img {
-        height: 36px;
-        margin-left: 12px;
-    }
-    
-    #fourth img {
-        height: 36px;
-        margin-left: 12px;
-    }
 }
 
 @media (max-width: 1366px) {
-    .container {
-        height: calc(100% - 103px);
-    }
-    
-    .container ul {
-        font-size: 38px;
-        margin-bottom: 57px;
-        margin-right: 71px;
-    }
-    
-    .container li {
-        letter-spacing: 2px;
-        text-shadow:
-        0 0 5px #fff,
-        0 0 72px #ffffff;
-    }
-    
-    #first img {
-        height: 31px;
-        margin-left: 11px;
-    }
-    
-    #second img {
-        height: 31px;
-        margin-left: 11px;
-    }
-    
-    #third img {
-        height: 31px;
-        margin-left: 11px;
-    }
-    
-    #fourth img {
-        height: 31px;
-        margin-left: 11px;
-    }
 }
 
 @media (max-width: 912px) and (orientation: portrait) {
-
 }
 
 @media (max-width: 500px) and (orientation: portrait) {
-    .container {
-        /* height: calc(100% - 103px); */
-        height: auto;
-        position: relative;
-        top: 60dvh;
+  .container {
+    height: auto;
+    position: relative;
+    height: 80%;
+  }
 
-    }
+  .container ul {
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    gap: 10px;
+  }
 
-    .container ul {
-        font-size: 20px;
-        margin-bottom: 25px;
-        margin-right: 20px;
-        gap: 10px;
-    }
+  .contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+  }
 
+  .contacts img {
+    height: 31px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
 
-    #first img {
-        height: 21px;
-        margin-right: 7px;
-    }
-    
-    #second img {
-        height: 21px;
-        margin-right: 7px;
-    }
-    
-    #third img {
-        height: 21px;
-        margin-right: 7px;
-    }
-    
-    #fourth img {
-        height: 21px;
-        margin-right: 7px;
-    }
-
-
+  .contacts a {
+    color: white;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
 }

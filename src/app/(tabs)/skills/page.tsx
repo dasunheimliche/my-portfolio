@@ -17,6 +17,7 @@ import redux from "../../../icons/redux.png";
 import english from "../../../icons/english.png";
 
 import ScrollController from "@/components/ScrollController";
+import SkillItem from "@/components/SkillItem";
 
 const Skills = () => {
   return (
@@ -27,59 +28,19 @@ const Skills = () => {
           <div className={`${style.topic2} fade1`}>
             <div className={style.title}>Frontend</div>
             <div className={style.list2}>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={reactIMG.src} alt="react img" />
-                </div>
-                <div className={style.itemTag}>React</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={vercelIMG.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>NextJS</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={react_router.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>R.Router</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={redux.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>Redux</div>
-              </div>
+              <SkillItem imgSrc={reactIMG.src} label="React" />
+              <SkillItem imgSrc={vercelIMG.src} label="NextJS" />
+              <SkillItem imgSrc={react_router.src} label="R.Router" />
+              <SkillItem imgSrc={redux.src} label="Redux" />
             </div>
           </div>
           <div className={`${style.topic2} fade2`}>
             <div className={style.title}>Backend</div>
             <div className={style.list2}>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={nodejs.src} alt="react img" />
-                </div>
-                <div className={style.itemTag}>NodeJS</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={express.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>Express</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={graphql.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>GraphQL</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={socketio.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>Socket.io</div>
-              </div>
+              <SkillItem imgSrc={nodejs.src} label="NodeJS" />
+              <SkillItem imgSrc={express.src} label="Express" />
+              <SkillItem imgSrc={graphql.src} label="GraphQL" />
+              <SkillItem imgSrc={socketio.src} label="Socket.io" />
             </div>
           </div>
         </div>
@@ -87,58 +48,23 @@ const Skills = () => {
           <div className={`${style.topic2} fade3`}>
             <div className={style.title}>Languages</div>
             <div className={style.list2}>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={js.src} alt="react img" />
-                </div>
-                <div className={style.itemTag}>Javascript</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={ts.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>Typescript</div>
-              </div>
+              <SkillItem imgSrc={js.src} label="Javascript" />
+              <SkillItem imgSrc={ts.src} label="Typescript" />
             </div>
           </div>
           <div className={`${style.topic2} fade4`}>
             <div className={style.title}>Database</div>
             <div className={style.list2}>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={mongodb.src} alt="react img" />
-                </div>
-                <div className={style.itemTag}>MongoDB</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={mysql.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>MySQL</div>
-              </div>
+              <SkillItem imgSrc={mongodb.src} label="MongoDB" />
+              <SkillItem imgSrc={mysql.src} label="MySQL" />
             </div>
           </div>
           <div id={style.others} className={`${style.topic2} fade5`}>
             <div className={style.title}>Others</div>
             <div className={style.list2}>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={git.src} alt="react img" />
-                </div>
-                <div className={style.itemTag}>Git</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={api.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>API's</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={english.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>EN (B2)</div>
-              </div>
+              <SkillItem imgSrc={git.src} label="Git" />
+              <SkillItem imgSrc={api.src} label="API's" />
+              <SkillItem imgSrc={english.src} label="EN (B2)" />
             </div>
           </div>
         </div>
@@ -146,24 +72,9 @@ const Skills = () => {
           <div className={`${style.topic2} fade5`}>
             <div className={style.title}>Others</div>
             <div className={style.list2}>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={git.src} alt="react img" />
-                </div>
-                <div className={style.itemTag}>Git</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={api.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>API's</div>
-              </div>
-              <div className={style.item}>
-                <div className={style.itemImg}>
-                  <img src={english.src} alt="vercel img" />
-                </div>
-                <div className={style.itemTag}>EN (B2)</div>
-              </div>
+              <SkillItem imgSrc={git.src} label="Git" />
+              <SkillItem imgSrc={api.src} label="API's" />
+              <SkillItem imgSrc={english.src} label="EN (B2)" />
             </div>
           </div>
         </div>
