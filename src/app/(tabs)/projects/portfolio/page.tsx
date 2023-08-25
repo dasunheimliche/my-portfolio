@@ -22,8 +22,8 @@ const portfolio = () => {
       </div>
 
       <ScrollController className={style.container}>
-        <div className={style.project}>
-          <section className={`${style.text} ${style.post} ${style.fade1}`}>
+        <div className={`${style.project} ${style.fade1}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Concept</div>
             <div className={style.content}>
               This portfolio is a project inspired by the synthwave aesthetic,
@@ -32,12 +32,8 @@ const portfolio = () => {
               retro-futuristic style, with bright and neon colors.
             </div>
           </section>
-          <img
-            src={portfolio_desk.src}
-            className={`${style.post} ${style.fade2}`}
-            alt=""
-          />
-          <section className={`${style.text} ${style.post} ${style.fade3}`}>
+          <img src={portfolio_desk.src} className={`${style.post}`} alt="" />
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Technologies used</div>
             <div className={`${style.content} ${style.flexed}`}>
               <div>
@@ -55,7 +51,7 @@ const portfolio = () => {
               </div>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade4}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Inspiration</div>
             <div className={style.content}>
               <p>

@@ -24,8 +24,8 @@ const WordsBattle = () => {
         </Link>
       </div>
       <ScrollController className={style.container}>
-        <div className={style.project}>
-          <section className={`${style.text} ${style.post} ${style.fade1}`}>
+        <div className={`${style.project} ${style.fade1}`}>
+          <section className={`${style.text} ${style.post} `}>
             <div className={style.title}>
               Concept: Bookworms, but in the form of an online multiplayer game.
             </div>
@@ -39,10 +39,10 @@ const WordsBattle = () => {
           </section>
           <img
             src={words_battle_desk.src}
-            className={`${style.post} ${style.fade2}`}
+            className={`${style.post} `}
             alt=""
           />
-          <section className={`${style.text} ${style.post} ${style.fade3}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Technologies Used</div>
             <div className={`${style.content} ${style.flexed}`}>
               <div>
@@ -68,7 +68,7 @@ const WordsBattle = () => {
               </div>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade4}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Functionality</div>
             <div className={style.content}>
               <p>
@@ -91,7 +91,7 @@ const WordsBattle = () => {
               </p>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade5}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Upcoming Implementations</div>
             <div className={style.content}>
               <ul className={style.list}>

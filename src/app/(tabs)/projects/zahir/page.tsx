@@ -24,8 +24,8 @@ const Zahir = () => {
         </Link>
       </div>
       <ScrollController className={style.container}>
-        <div className={style.project}>
-          <section className={`${style.text} ${style.post} ${style.fade1}`}>
+        <div className={`${style.project} ${style.fade1}`}>
+          <section className={`${style.text} ${style.post} `}>
             <div className={style.title}>
               Concept: My ideal Tumblr. A different social network.
             </div>
@@ -52,12 +52,8 @@ const Zahir = () => {
               </p>
             </div>
           </section>
-          <img
-            src={zahir_desk.src}
-            className={`${style.post} ${style.fade2}`}
-            alt=""
-          />
-          <section className={`${style.text} ${style.post} ${style.fade1}`}>
+          <img src={zahir_desk.src} className={`${style.post} `} alt="" />
+          <section className={`${style.text} ${style.post} `}>
             <div className={style.title}>Used technologies</div>
             <div className={`${style.content} ${style.flexed}`}>
               <div>
@@ -86,7 +82,7 @@ const Zahir = () => {
               </div>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade1}`}>
+          <section className={`${style.text} ${style.post} `}>
             <div className={style.title}>Functionality</div>
             <div className={style.content}>
               <p>
@@ -102,7 +98,7 @@ const Zahir = () => {
               </p>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade1}`}>
+          <section className={`${style.text} ${style.post} `}>
             <div className={style.title}>Upcoming features</div>
             <div className={style.content}>
               <ul className={style.list}>

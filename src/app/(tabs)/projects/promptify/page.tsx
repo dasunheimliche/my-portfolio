@@ -24,8 +24,8 @@ const Promptify = () => {
         </Link>
       </div>
       <ScrollController className={style.container}>
-        <div className={style.project}>
-          <section className={`${style.text} ${style.post} ${style.fade1}`}>
+        <div className={`${style.project} ${style.fade1}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>
               Concept: I needed a prompt organizer, so I made one!
             </div>
@@ -35,12 +35,8 @@ const Promptify = () => {
               saving prompts and prompt chains.{" "}
             </div>
           </section>
-          <img
-            src={promptify_desk.src}
-            className={`${style.post} ${style.fade2}`}
-            alt=""
-          />
-          <section className={`${style.text} ${style.post} ${style.fade3}`}>
+          <img src={promptify_desk.src} className={`${style.post}`} alt="" />
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Technologies used</div>
             <div className={`${style.content} ${style.flexed}`}>
               <div>
@@ -67,7 +63,7 @@ const Promptify = () => {
               </div>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade4}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Functionality</div>
             <div className={style.content}>
               <p>
@@ -96,7 +92,7 @@ const Promptify = () => {
               </p>
             </div>
           </section>
-          <section className={`${style.text} ${style.post} ${style.fade5}`}>
+          <section className={`${style.text} ${style.post}`}>
             <div className={style.title}>Upcoming Implementations</div>
             <div className={style.content}>
               <ul className={style.list}>

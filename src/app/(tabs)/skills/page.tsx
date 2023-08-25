@@ -22,10 +22,10 @@ import SkillItem from "@/components/SkillItem";
 const Skills = () => {
   return (
     <>
-      <ScrollController className={style.container}>
+      <ScrollController className={`${style.container} ${style.fade1}`}>
         <div className={style.row0}>Skills</div>
         <div className={style.row1}>
-          <div className={`${style.topic2} fade1`}>
+          <div className={`${style.topic2}`}>
             <div className={style.title}>Frontend</div>
             <div className={style.list2}>
               <SkillItem imgSrc={reactIMG.src} label="React" />
@@ -34,7 +34,7 @@ const Skills = () => {
               <SkillItem imgSrc={redux.src} label="Redux" />
             </div>
           </div>
-          <div className={`${style.topic2} fade2`}>
+          <div className={`${style.topic2}`}>
             <div className={style.title}>Backend</div>
             <div className={style.list2}>
               <SkillItem imgSrc={nodejs.src} label="NodeJS" />
@@ -45,21 +45,21 @@ const Skills = () => {
           </div>
         </div>
         <div className={style.row2}>
-          <div className={`${style.topic2} fade3`}>
+          <div className={`${style.topic2}`}>
             <div className={style.title}>Languages</div>
             <div className={style.list2}>
               <SkillItem imgSrc={js.src} label="Javascript" />
               <SkillItem imgSrc={ts.src} label="Typescript" />
             </div>
           </div>
-          <div className={`${style.topic2} fade4`}>
+          <div className={`${style.topic2}`}>
             <div className={style.title}>Database</div>
             <div className={style.list2}>
               <SkillItem imgSrc={mongodb.src} label="MongoDB" />
               <SkillItem imgSrc={mysql.src} label="MySQL" />
             </div>
           </div>
-          <div id={style.others} className={`${style.topic2} fade5`}>
+          <div id={style.others} className={`${style.topic2}`}>
             <div className={style.title}>Others</div>
             <div className={style.list2}>
               <SkillItem imgSrc={git.src} label="Git" />
@@ -69,7 +69,7 @@ const Skills = () => {
           </div>
         </div>
         <div className={style.row22}>
-          <div className={`${style.topic2} fade5`}>
+          <div className={`${style.topic2}`}>
             <div className={style.title}>Others</div>
             <div className={style.list2}>
               <SkillItem imgSrc={git.src} label="Git" />
@@ -79,7 +79,7 @@ const Skills = () => {
           </div>
         </div>
         <div className={style.row3}>
-          <div className={`${style.topic2} fade6`}>
+          <div className={`${style.topic2}`}>
             <div className={style.title}>Soft Skills</div>
             <div className={style.list3}>
               <ul>
@@ -95,7 +95,7 @@ const Skills = () => {
               </ul>
             </div>
           </div>
-          <div id={style.academic} className={`${style.topic2} fade7`}>
+          <div id={style.academic} className={`${style.topic2}`}>
             <div className={style.title}>Other academic skills</div>
             <div className={style.list3}>
               <ul>
@@ -113,7 +113,7 @@ const Skills = () => {
           </div>
         </div>
         <div className={style.row33}>
-          <div className={`${style.topic2} fade7`}>
+          <div className={`${style.topic2}`}>
             <div className={style.title}>Other academic skills</div>
             <div className={style.list3}>
               <ul>
